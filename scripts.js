@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
             description: "Captain of the Straw Hat Pirates and aspiring Pirate King.",
             bounty: "3,000,000,000 Berries",
             fightingStyle: "Gum-Gum Fruit abilities",
-            image: "images/Luffy.jpg",
+            image: "Luffy.jpg",
             quote: "\"I'm gonna be the King of the Pirates!\"",
             achievements: [
                 "Defeated Don Krieg, Arlong, Crocodile, and more",
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
             description: "Swordsman of the Straw Hat Pirates, aiming to be the world's greatest swordsman.",
             bounty: "1,111,000,000 Berries",
             fightingStyle: "Three-Sword Style",
-            image: "images/Zoro.jpg",
+            image: "Zoro.jpg",
             quote: "\"Nothing happened.\"",
             achievements: [
                 "Defeated Daz Bones, Kaku, Pica, and more",
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
             description: "Navigator of the Straw Hat Pirates and a talented cartographer.",
             bounty: "366,000,000 Berries",
             fightingStyle: "Clima-Tact and Weather Manipulation",
-            image: "images/Nami.jpg",
+            image: "Nami.jpg",
             quote: "\"I love money and tangerines!\"",
             achievements: [
                 "Helped save Alabasta from Crocodile",
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
             description: "Sniper of the Straw Hat Pirates, known for his lies and cunning.",
             bounty: "500,000,000 Berries",
             fightingStyle: "Sniping and Inventive Weaponry",
-            image: "images/Usopp.jpg",
+            image: "Usopp.jpg",
             quote: "\"I am the great Captain Usopp!\"",
             achievements: [
                 "Defeated Perona at Thriller Bark",
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
             description: "Cook of the Straw Hat Pirates, known for his martial arts and cooking skills.",
             bounty: "1,032,000,000 Berries",
             fightingStyle: "Black Leg Style",
-            image: "images/Sanji.jpg",
+            image: "Sanji.jpg",
             quote: "\"I won't let anyone starve!\"",
             achievements: [
                 "Fought against Jabra at Enies Lobby",
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
             description: "Doctor of the Straw Hat Pirates, a reindeer with a human-human fruit.",
             bounty: "1,000 Berries",
             fightingStyle: "Medical Expertise and Devil Fruit Transformations",
-            image: "images/Chopper.jpg",
+            image: "Chopper.jpg",
             quote: "\"I'm not a reindeer!\"",
             achievements: [
                 "Developed the Rumble Ball for enhanced transformations",
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
             description: "Archaeologist of the Straw Hat Pirates, able to read Poneglyphs.",
             bounty: "930,000,000 Berries",
             fightingStyle: "Flower-Flower Fruit abilities",
-            image: "images/Robin.jpg",
+            image: "Robin.jpg",
             quote: "\"I want to live!\"",
             achievements: [
                 "Helped the crew decipher ancient texts and maps",
@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
             description: "Shipwright of the Straw Hat Pirates, a cyborg with powerful abilities.",
             bounty: "394,000,000 Berries",
             fightingStyle: "Cyborg Modifications and Engineering Skills",
-            image: "images/Franky.jpg",
+            image: "Franky.jpg",
             quote: "\"SUPER!\"",
             achievements: [
                 "Built the Thousand Sunny ship",
@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
             description: "Musician of the Straw Hat Pirates, a skeleton with the power of the revive-revive fruit.",
             bounty: "383,000,000 Berries",
             fightingStyle: "Swordsmanship and Music-Based Attacks",
-            image: "images/Brook.jpg",
+            image: "Brook.jpg",
             quote: "\"Yohohoho! Skull joke!\"",
             achievements: [
                 "Defeated Ryuma at Thriller Bark",
@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
             description: "Helmsman of the Straw Hat Pirates, a fish-man and former Warlord of the Sea.",
             bounty: "1,100,000,000 Berries",
             fightingStyle: "Fish-Man Karate and Fish-Man Jujutsu",
-            image: "images/Jimbei.jpg",
+            image: "Jimbei.jpg",
             quote: "\"Let us put an end to the hatred.\"",
             achievements: [
                 "Fought against Big Mom's forces at Whole Cake Island",
@@ -137,62 +137,62 @@ document.addEventListener("DOMContentLoaded", () => {
         { 
             title: "East Blue Saga", 
             description: "The journey begins as Luffy sets out from Foosha Village.", 
-            image: "images/east-blue.avif" 
+            image: "east-blue.avif" 
         },
         { 
             title: "Alabasta Saga", 
             description: "The Straw Hats fight to save Alabasta from a civil war orchestrated by Crocodile.", 
-            image: "images/alabasta.avif" 
+            image: "alabasta.avif" 
         },
         { 
             title: "Skypiea Saga", 
             description: "A legendary island in the sky and the fight against the false god Enel.", 
-            image: "images/skypiea.avif" 
+            image: "skypiea.avif" 
         },
         { 
             title: "Water 7 Saga", 
             description: "The crew fights against CP9 to save Robin in the city of Water 7.", 
-            image: "images/water-7.avif" 
+            image: "water-7.avif" 
         },
         { 
             title: "Enies Lobby Saga", 
             description: "The crew declares war against the world government to save Robin.", 
-            image: "images/enies-lobby.avif" 
+            image: "enies-lobby.avif" 
         },
         { 
             title: "Thriller Bark Saga", 
             description: "A haunted ship full of zombies and the fight against Gecko Moria.", 
-            image: "images/thriller-bark.avif"
+            image: "thriller-bark.avif"
         },
         { 
             title: "Sabaody Saga", 
             description: "The crew gets separated by a revolutionary Kuma.", 
-            image: "images/sabaody.avif" 
+            image: "sabaody.avif" 
         },
         { 
             title: "Summit War Saga", 
             description: "The battle at Marineford to save Ace from execution.", 
-            image: "images/summit-war.avif" 
+            image: "summit-war.avif" 
         },
         { 
             title: "Fish-Man Island Saga", 
             description: "The Straw Hats' journey to Fish-Man Island and the fight against Hody Jones.", 
-            image: "images/fish-man-island.avif" 
+            image: "fish-man-island.avif" 
         },
         { 
             title: "Dressrosa Saga", 
             description: "The fight against Doflamingo to free Dressrosa from tyranny.", 
-            image: "images/dressrosa.avif" 
+            image: "dressrosa.avif" 
         },
         { 
             title: "Whole Cake Island Saga", 
             description: "The mission to retrieve Sanji from Big Mom's territory.", 
-            image: "images/whole-cake-island.avif" 
+            image: "whole-cake-island.avif" 
         },
         { 
             title: "Wano Country Saga", 
             description: "The fight against Kaido and the liberation of Wano Country.", 
-            image: "images/wano.avif" 
+            image: "wano.avif" 
         }
     ];
 
