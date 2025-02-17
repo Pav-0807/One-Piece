@@ -1,0 +1,435 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Light background color for the main body */
+    color: #2c2c2c; /* Dark gray text color for body text */
+}
+
+header {
+    background-color: #333333; /* Dark gray background color for header */
+    color: #f5f5dc; /* Beige text color for header */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #f5f5dc; /* Beige for navigation links */
+    text-decoration: none;
+    padding: 5px 10px;
+    position: relative;
+    transition: all 0.3s ease-in-out; /* Transition for hover effect */
+}
+
+nav ul li a:hover {
+    color: #333333; /* Dark background text color on hover */
+    background-color: #f5f5dc; /* Beige background on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+    transform: translateY(-3px); /* Move the link slightly up */
+    text-decoration: underline; /* Underline the text on hover */
+}
+
+main {
+    padding: 20px;
+    color: #2c2c2c; /* Dark gray text color for main content */
+}
+
+h2 {
+    text-align: center;
+    color: #2c2c2c; /* Dark gray text color for headings */
+}
+
+#characterList, #episodeList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.character, .episode {
+    background-color: #fff; /* White background for cards */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out; /* Add transition for scaling */
+}
+
+.character:hover, .episode:hover {
+    transform: scale(1.05); /* Scale up the card slightly on hover */
+}
+
+.character img, .episode img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.character h3, .episode h3 {
+    color: #2c2c2c; /* Dark gray text color for character and episode titles */
+    margin: 10px 0;
+}
+
+.character p, .episode p {
+    color: #666666; /* Lighter gray for additional text */
+}
+
+.character ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.character ul li {
+    background-color: #f8f8f8; /* Slightly off-white for list items */
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 3px;
+}
+
+footer {
+    background-color: #333333; /* Dark gray background for footer */
+    color: #f5f5dc; /* Beige text color for footer */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#characterSpotlight {
+    padding: 20px;
+    background-color: #333333; /* Dark background for the section */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    max-width: 800px; /* Maximum width for the spotlight section */
+}
+
+.character-link {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color from parent */
+}
+
+.character-entry {
+    display: flex;
+    align-items: center; /* Center the items vertically within the entry */
+    gap: 20px; /* Space between the image and description */
+    background-color: #f5f5dc; /* Beige background for each entry */
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Space between each character entry */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.character-entry:hover {
+    transform: translateY(-5px); /* Lift the entry slightly on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.character-image {
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    width: 150px; /* Set a fixed width for the image */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 5px; /* Rounded corners for the image */
+}
+
+.character-description {
+    flex-grow: 1; /* Allow the description to take up remaining space */
+    color: #2c2c2c; /* Dark gray text color for the description */
+}
+
+.character-description h3 {
+    margin-top: 0;
+    color: #333333; /* Darker gray text color for the character name */
+}
+
+.character-description p {
+    color: #444444; /* Darker gray for the description text */
+}
+
+h2 {
+    color: #f5f5dc; /* Beige color for the section heading */
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px;
+}
+#featuredEpisodes {
+    padding: 20px;
+    background-color: #333333; /* Dark background for the section */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    max-width: 800px; /* Maximum width for the episodes section */
+}
+
+.episode-entry {
+    display: flex;
+    align-items: center; /* Center the items vertically within the entry */
+    gap: 20px; /* Space between the image and description */
+    background-color: #f5f5dc; /* Beige background for each entry */
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Space between each episode entry */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.episode-entry:hover {
+    transform: translateY(-5px); /* Lift the entry slightly on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.episode-image {
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    width: 150px; /* Set a fixed width for the image */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 5px; /* Rounded corners for the image */
+}
+
+.episode-description {
+    flex-grow: 1; /* Allow the description to take up remaining space */
+    color: #2c2c2c; /* Dark gray text color for the description */
+}
+
+.episode-description h3 {
+    margin-top: 0;
+    color: #333333; /* Darker gray text color for the episode title */
+}
+
+.episode-description p {
+    color: #444444; /* Darker gray for the description text */
+}
+
+.episode-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007BFF; /* Blue color for the link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.episode-link:hover {
+    text-decoration: underline; /* Underline link on hover */
+}
+
+h2 {
+    color: #f5f5dc; /* Beige color for the section heading */
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333333; /* Dark background for footer */
+    color: #f5f5dc; /* Beige text color */
+    padding: 20px 0; /* Padding for top and bottom */
+    text-align: center; /* Center-align text and icons */
+}
+
+.footer-content {
+    max-width: 800px; /* Max width to align with page content */
+    margin: 0 auto; /* Center content */
+}
+
+.footer-content p {
+    margin: 0 0 10px; /* Margin for the paragraph */
+    font-size: 14px; /* Font size for footer text */
+}
+
+.social-links {
+    font-size: larger;
+
+    display: flex;
+    justify-content: center; /* Center-align social media icons */
+    gap: 36px; /* Space between icons */
+}
+
+.social-icon {
+    display: inline-block; /* Display icons inline */
+}
+
+#newsUpdates {
+    padding: 20px; /* Padding for the section */
+    background-color: #333333; /* Dark background color */
+    margin: 20px auto; /* Center the section */
+    max-width: 800px; /* Limit the maximum width */
+    border-radius: 5px; /* Rounded corners for the section */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+}
+
+#newsUpdates h2 {
+    color: #f5f5dc; /* Beige text color for the section heading */
+    text-align: center; /* Center-align the heading */
+    margin-bottom: 20px; /* Margin below the heading */
+}
+
+.news-container {
+    display: flex;
+    flex-direction: column; /* Arrange boxes vertically */
+    gap: 20px; /* Space between news boxes */
+}
+
+.news-box {
+    background-color:  #f5f5dc; /* Dark gray background for each news box */
+    border: 1px solid #555555; /* Slightly darker border around each box */
+    border-radius: 5px; /* Rounded corners for boxes */
+    padding: 15px; /* Padding inside each box */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.news-box:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.news-box h3 {
+    margin-top: 0; /* Remove top margin for headlines */
+    color: #2c2c2c; /* Beige color for headlines */
+}
+
+.news-box p {
+    color: #2c2c2c; /* Light gray for news text */
+    margin: 10px 0; /* Space between paragraphs */
+}
+
+.read-more {
+    display: inline-block; /* Treat as inline-block for button styling */
+    color: #007BFF; /* Blue color for read more link */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    margin-top: 10px; /* Margin above the link */
+}
+
+.read-more:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light background for the page */
+    color: #333333; /* Dark text color for general content */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header {
+    background-color: #333333; /* Dark background for header */
+    color: #f5f5dc; /* Beige text color for header */
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #f5f5dc; /* Beige text color for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #dfaf37; /* Gold color for active and hover states */
+}
+
+main {
+    padding: 20px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333; /* Dark color for section headings */
+}
+
+/* Forum Styles */
+#forum {
+    background-color: #ffffff; /* White background for the forum section */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.forum-container {
+    display: flex;
+    flex-direction: column; /* Arrange topics vertically */
+    gap: 20px; /* Space between topics */
+}
+
+.forum-topic {
+    background-color: #2c2c2c; /* Beige background for each topic box */
+    border: 1px solid #dddddd; /* Light border */
+    border-radius: 5px;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover */
+}
+
+.forum-topic:hover {
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.forum-topic h3 {
+    margin-top: 0;
+    color: #333333; /* Dark color for topic titles */
+}
+
+.forum-topic p {
+    margin: 10px 0;
+    color: beige; /* Dark gray for descriptions */
+}
+
+.meta {
+    font-size: 12px;
+    color: #666666; /* Gray for metadata */
+}
+
+.join-discussion {
+    display: inline-block;
+    color: #007BFF; /* Blue color for links */
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.join-discussion:hover {
+    text-decoration: underline;
+}
+
+
