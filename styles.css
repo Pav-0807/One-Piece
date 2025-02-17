@@ -162,7 +162,7 @@ footer {
     color: #444444; /* Darker gray for the description text */
 }
 
-h2 {
+#characterSpotlight h2 {
     color: #f5f5dc; /* Beige color for the section heading */
     text-align: center; /* Center the heading */
     margin-bottom: 20px;
@@ -226,7 +226,7 @@ h2 {
     text-decoration: underline; /* Underline link on hover */
 }
 
-h2 {
+#featuredEpisodes h2 {
     color: #f5f5dc; /* Beige color for the section heading */
     text-align: center; /* Center the heading */
     margin-bottom: 20px;
